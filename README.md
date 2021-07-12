@@ -1,0 +1,2 @@
+# ShamGod
+ python3
