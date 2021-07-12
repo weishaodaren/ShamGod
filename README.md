@@ -1,2 +1,3 @@
 # ShamGod
- Daily Python i🐱‍🏍
+
+Daily Python 🐱‍🏍
