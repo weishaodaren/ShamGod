@@ -1,2 +1,2 @@
 # ShamGod
- python3
+ Daily Python i🐱‍🏍
