@@ -27,4 +27,3 @@ if a + b > c and a + c > b \
     print('面积: %f' % (area))
 else:
     print('No')
-    
