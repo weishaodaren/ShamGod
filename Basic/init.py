@@ -14,3 +14,6 @@ turtle.right(900)
 turtle.forward(1000)
 
 turtle.mainloop()
+
+def click_me(*args):
+    print(args)
