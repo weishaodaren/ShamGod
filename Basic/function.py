@@ -93,10 +93,14 @@
 #         print('%d是回文素数' % num)
 
 def foo():
+    global a
+    a = 200
     b = 'hello'
     
     def bar():
         c = True
+        nonlocal b
+        b = 'kitty'
         print(a)
         print(b)
         print(c)
@@ -104,4 +108,6 @@ def foo():
 
 if __name__ == '__main__':
     a = 100
+    pass
+
     foo()
