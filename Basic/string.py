@@ -16,5 +16,5 @@ s2 = 'kitty'
 s1 += s2
 
 # print('k' in s1)
-print(s1[2:10])
-#  [:] [::] 🥱
+str = 'abc123456'
+print(str[-3::-1])
