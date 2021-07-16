@@ -17,4 +17,9 @@ s1 += s2
 
 # print('k' in s1)
 str = 'abc123456'
-print(str[-3::-1])
+# print(str[-3::-1])
+
+str1 = 'hello world'
+# print(len(str1))
+# print(str1.capitalize())
+print(str1.title())
