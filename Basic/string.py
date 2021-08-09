@@ -23,3 +23,16 @@ str1 = 'hello world'
 # print(len(str1))
 # print(str1.capitalize())
 print(str1.title())
+print(len(str1))
+print(str1.capitalize())
+print(str1.upper())
+print(str1.center(50, '*'))
+print(str1.rjust(50, ' '))
+print(str1.isdigit())
+print(str1.isalpha())
+print(str1.isalnum())
+print(str1.strip())
+
+a, b = 5, 10
+# py 3.6
+print(f'{a} * {b} = {a * b}')
