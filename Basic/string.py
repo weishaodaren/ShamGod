@@ -115,3 +115,30 @@ t = ('K', 90, False, 'M78')
 print(list(t))
 
 print(tuple(list2))
+
+set1 = {1, 2, 3, 4, 5, 2}
+print(set1)
+print('Length =', len(set1))
+
+set2 = set(range(1, 10))
+set3 = set((1, 2, 3, 3, 2, 1))
+print(set2, set3)
+
+set4 = {num for num in range(1, 100) if num % 3 == 0 or num % 5 == 0}
+print(set4)
+
+set1.add(40)
+set1.add(50)
+set1.update([11, 22])
+set1.discard(50)
+set1.remove(1)
+set1.pop()
+print(set1)
+
+print(set2 ^ set1, '^')
+print(set2 & set1, '&')
+print(set2 | set1, '|')
+print(set2 - set1, '-')
+print(set2 <= set1)
+print(set2 , '=<2')
+print(set1, '=<1')
