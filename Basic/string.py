@@ -73,3 +73,45 @@ list3 = sorted(list2, reverse=True)
 list4 = sorted(list2, key=len)
 print(list3)
 print(list4)
+
+f = [a for a in range(1, 10)]
+print(f)
+
+f = [x + y for x in 'ABCDE' for y in '1234567']
+print(f)
+
+import sys
+
+f = [x ** 2 for x in range(1, 1000)]
+print(sys.getsizeof(f))
+
+f = (x ** 2 for x in range(1, 1000))
+print(sys.getsizeof(f))
+print(f)
+for val in f:
+    print(val)
+
+
+def fib(n):
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a + b
+        yield a
+
+def main():
+    for val in fib(20):
+        print(val)
+
+if __name__ == '__main__':
+    main()
+
+
+t = ('weishaodaren', 25, True, 'Shanghai')
+print(t[-1])
+for member in t:
+    print(member)
+
+t = ('K', 90, False, 'M78')
+print(list(t))
+
+print(tuple(list2))
