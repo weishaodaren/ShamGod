@@ -1,4 +1,8 @@
 class Person(object):
+
+    # 限定Person对象只能绑定_name, _age 和 _gender属性
+    __slots__ = ('_name', '_age', '_gender')
+
     def __init__(self, name, age):
         self._name = name
         self._age = age
@@ -32,6 +36,7 @@ def main():
     person.play()
     person.name = 'lalala'
     person.play()
+    person._gender = 'Male'
 
 
 if __name__ == '__main__':
