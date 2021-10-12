@@ -40,5 +40,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-# now is Class Replation ... still updating
