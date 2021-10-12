@@ -26,7 +26,6 @@ class Card(object):
             face_str = 'K'
         else:
             face_str = str(self._face)
-        # return '${self._suite}, ${face_str}'
         return '%s%s' % (self._suite, face_str)
     
     def __repr__(self):
@@ -99,7 +98,7 @@ def main():
         for player in players:
             player.get(p.next)
     for player in players:
-        print(player.name + ':', end='')
+        print(player.name + ':', end=' ')
         player.arrange(get_key)
         print(player.cards_on_table)
 
