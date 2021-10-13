@@ -19,7 +19,7 @@ def main():
     p1.start()
     p2 = Process(target=download_task, args=('Toyko.avi',))
     p2.start()
-    p1.join()
+    p1.join() # 等待执行结束
     p2.join()
     end = time()
     print('一共耗时%2f秒' % (end - start))
