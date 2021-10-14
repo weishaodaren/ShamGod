@@ -27,6 +27,7 @@ def main():
         'http://api.tianapi.com/meinv/?key=APIKey&num=10')
     # 将服务器返回的JSON格式的数据解析为字典
     data_model = resp.json()
+    print(data_model, 'hahhaha')
     for mm_dict in data_model['newslist']:
         url = mm_dict['picUrl']
         # 通过多线程的方式实现图片下载
