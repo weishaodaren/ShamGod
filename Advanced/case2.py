@@ -19,4 +19,6 @@ list2 = [
 print(heapq.nlargest(3, list1))
 # 最小三位升序
 print(heapq.nsmallest(3, list1))
+
 print(heapq.nlargest(2, list2, key=lambda x: x['price']))
+print(heapq.nlargest(2, list2, key=lambda x: x['shares']))
